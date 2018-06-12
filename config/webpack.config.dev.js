@@ -164,10 +164,19 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  sourceMap: true,
+                  modules: true,
+                  localIdentName: '[local]___[hash:base64:5]',
                 },
               },
               {
                 loader: require.resolve('sass-loader'),
+                options: {
+                  importLoaders: 1,
+                  modules: true,
+                  sourceMap: true,
+                  localIdentName: '[local]___[hash:base64:5]',
+                },
               },
               {
                 loader: require.resolve('postcss-loader'),
