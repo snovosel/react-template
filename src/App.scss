@@ -1,3 +1,5 @@
+@import 'styles/variables';
+
 /* TODO: check notes */
 
 /* buttons */
@@ -25,8 +27,8 @@
 }
 
 .primary {
-  background-color: #008ED3;
-  border-color: #008ED3;
+  background-color: $color-primary;
+  border-color: $color-primary;
 }
 
 .primary:focus {
