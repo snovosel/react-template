@@ -1,0 +1,79 @@
+/* TODO: check notes */
+
+/* buttons */
+.button {
+  border: 1px solid #2cd6a0;
+  height: 50px;
+  width: 100px;
+
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.button:focus {
+  outline: none;
+  border: 1px solid #2EA2DB;
+}
+
+.wire {
+  background-color: transparent;
+  border: 1px solid #404040;
+}
+
+.wire:focus {
+  border: 1px solid #f2f2f2;
+}
+
+.primary {
+  background-color: #008ED3;
+  border-color: #008ED3;
+}
+
+.primary:focus {
+  border: 1px solid #E7F4FB;
+}
+
+.secondary {
+  background-color: #E7F4FB;
+  border-color: #E7F4FB;
+}
+
+.secondary:focus {
+  border: 1px solid #d3ebf8;
+}
+
+/* TODO: check notes */
+
+/* input texts */
+.input-text {
+  height: 35px;
+  width: 300px;
+  border: 1px solid #808080;
+  padding: 0px 8px;
+  border-radius: 3px;
+  box-shadow: none;
+  background-color: transparent;
+  color: #404040;
+}
+
+.input-text:focus {
+  outline: none;
+  border: 1px solid #f2f2f2;
+}
+
+/* TODO: check notes */
+
+/* text area */
+.text-area {
+  resize: none;
+  height: 85px;
+  width: 300px;
+  padding: 3px 8px;
+  font-family: "Tahoma", "Arial", "Arabic Transparent";
+  border-radius: 1px;
+}
+
+.text-area:focus {
+  outline: none;
+  border: 1px solid #f2f2f2;
+}
