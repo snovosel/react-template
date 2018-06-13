@@ -12,6 +12,7 @@ class App extends Component {
         <Button label="mate" styleType="wire" />
         <Button label="mate" styleType="primary" />
         <Button label="possible" styleType="secondary" />
+        <Button label="dryice" styleType="tertiary" />
         <br />
         <h4>Input Text</h4>
         <InputText placeholder="Enter this here..." />
