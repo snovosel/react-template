@@ -1,52 +1,64 @@
 
 
-
 /* colors */
 
 /* primary */
-$color-primary: rgba(0, 142, 211, 1);
-$color-primary-1: rgba(0, 142, 211, 0.9);
-$color-primary-2: rgba(0, 142, 211, 0.8);
-$color-primary-3: rgba(0, 142, 211, 0.7);
-$color-primary-4: rgba(0, 142, 211, 0.6);
-$color-primary-5: rgba(0, 142, 211, 0.5);
-$color-primary-6: rgba(0, 142, 211, 0.4);
-$color-primary-7: rgba(0, 142, 211, 0.3);
-$color-primary-8: rgba(0, 142, 211, 0.2);
-$color-primary-9: rgba(0, 142, 211, 0.1);
+$color-primary: #008ed3;
+$color-primary-1: make_color($color-primary, 0.9);
+$color-primary-2: rgba($color-primary, 0.8);
+$color-primary-3: rgba($color-primary, 0.7);
+$color-primary-4: rgba($color-primary, 0.6);
+$color-primary-5: rgba($color-primary, 0.5);
+$color-primary-6: rgba($color-primary, 0.4);
+$color-primary-7: rgba($color-primary, 0.3);
+$color-primary-8: rgba($color-primary, 0.2);
+$color-primary-9: rgba($color-primary, 0.1);
 
 /* secondary */
-$color-secondary: rgba(231, 244, 251, 1);
-$color-secondary-1: rgba(231, 244, 251, 0.9);
-$color-secondary-2: rgba(231, 244, 251, 0.8);
-$color-secondary-3: rgba(231, 244, 251, 0.7);
-$color-secondary-4: rgba(231, 244, 251, 0.6);
-$color-secondary-5: rgba(231, 244, 251, 0.5);
-$color-secondary-6: rgba(231, 244, 251, 0.4);
-$color-secondary-7: rgba(231, 244, 251, 0.3);
-$color-secondary-8: rgba(231, 244, 251, 0.2);
-$color-secondary-9: rgba(231, 244, 251, 0.1);
+$color-secondary: #e7f4fb;
+$color-secondary-1: rgba($color-secondary, 0.9);
+$color-secondary-2: rgba($color-secondary, 0.8);
+$color-secondary-3: rgba($color-secondary, 0.7);
+$color-secondary-4: rgba($color-secondary, 0.6);
+$color-secondary-5: rgba($color-secondary, 0.5);
+$color-secondary-6: rgba($color-secondary, 0.4);
+$color-secondary-7: rgba($color-secondary, 0.3);
+$color-secondary-8: rgba($color-secondary, 0.2);
+$color-secondary-9: rgba($color-secondary, 0.1);
+
+/* warning */
+$color-warning: #ff3333;
+$color-warning-1: rgba($color-warning, 0.9);
+$color-warning-2: rgba($color-warning, 0.8);
+$color-warning-3: rgba($color-warning, 0.7);
+$color-warning-4: rgba($color-warning, 0.6);
+$color-warning-5: rgba($color-warning, 0.5);
+$color-warning-6: rgba($color-warning, 0.4);
+$color-warning-7: rgba($color-warning, 0.3);
+$color-warning-8: rgba($color-warning, 0.2);
+$color-warning-9: rgba($color-warning, 0.1);
 
 /* tertiary */
-$color-tertiary: rgba(255, 51, 51, 1);
-$color-tertiary-1: rgba(255, 51, 51, 0.9);
-$color-tertiary-2: rgba(255, 51, 51, 0.8);
-$color-tertiary-3: rgba(255, 51, 51, 0.7);
-$color-tertiary-4: rgba(255, 51, 51, 0.6);
-$color-tertiary-5: rgba(255, 51, 51, 0.5);
-$color-tertiary-6: rgba(255, 51, 51, 0.4);
-$color-tertiary-7: rgba(255, 51, 51, 0.3);
-$color-tertiary-8: rgba(255, 51, 51, 0.2);
-$color-tertiary-9: rgba(255, 51, 51, 0.1);
+$color-tertiary: #005b87;
+$color-solid-1: rgba($color-tertiary, 0.9);
+$color-solid-2: rgba($color-tertiary, 0.8);
+$color-solid-3: rgba($color-tertiary, 0.7);
+$color-solid-4: rgba($color-tertiary, 0.6);
+$color-solid-5: rgba($color-tertiary, 0.5);
+$color-solid-6: rgba($color-tertiary, 0.4);
+$color-solid-7: rgba($color-tertiary, 0.3);
+$color-solid-8: rgba($color-tertiary, 0.2);
+$color-solid-9: rgba($color-tertiary, 0.1);
+
 
 /* grayscale */
-$color-grayscale: rgba(64, 64, 64, 1);
-$color-grayscale-1: rgba(64, 64, 64, 0.9);
-$color-grayscale-2: rgba(64, 64, 64, 0.8);
-$color-grayscale-3: rgba(64, 64, 64, 0.7);
-$color-grayscale-4: rgba(64, 64, 64, 0.6);
-$color-grayscale-5: rgba(64, 64, 64, 0.5);
-$color-grayscale-6: rgba(64, 64, 64, 0.4);
-$color-grayscale-7: rgba(64, 64, 64, 0.3);
-$color-grayscale-8: rgba(64, 64, 64, 0.2);
-$color-grayscale-9: rgba(64, 64, 64, 0.1);
+$color-grayscale: #404040;
+$color-grayscale-1: rgba($color-grayscale, 0.9);
+$color-grayscale-2: rgba($color-grayscale, 0.8);
+$color-grayscale-3: rgba($color-grayscale, 0.7);
+$color-grayscale-4: rgba($color-grayscale, 0.6);
+$color-grayscale-5: rgba($color-grayscale, 0.5);
+$color-grayscale-6: rgba($color-grayscale, 0.4);
+$color-grayscale-7: rgba($color-grayscale, 0.3);
+$color-grayscale-8: rgba($color-grayscale, 0.2);
+$color-grayscale-9: rgba($color-grayscale, 0.1);
