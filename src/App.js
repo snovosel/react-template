@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Button from './components/Button/index.jsx';
+import InputText from './components/InputText/index.jsx';
+import InputTextArea from './components/InputTextArea/index.jsx';
 
 class App extends Component {
   render() {
@@ -17,15 +19,6 @@ class App extends Component {
         <h4>Input Text Area </h4>
         <InputTextArea placeholder="Enter text in this text area box..." />
       </div>
-    );
-  }
-}
-
-class InputTextArea extends Component {
-  render() {
-    const { placeholder } = this.props;
-    return (
-      <textarea className="text-area" placeholder={placeholder} />
     );
   }
 }

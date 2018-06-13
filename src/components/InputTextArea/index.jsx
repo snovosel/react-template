@@ -3,18 +3,17 @@ import CSSModules from 'react-css-modules';
 
 import styles from './index.style.scss';
 
-class InputText extends Component {
+class InputTextArea extends Component {
   render() {
     const { placeholder } = this.props;
-
     return (
-      <input placeholder={placeholder} styleName="input-text" />
+      <textarea styleName="text-area" placeholder={placeholder} />
     );
   }
 }
 
-const InputTextStyled = CSSModules(InputText, styles, {
+const InputTextAreaStyled = CSSModules(InputTextArea, styles, {
   allowMultiple: true,
 });
 
-export default InputTextStyled;
+export default InputTextAreaStyled;
