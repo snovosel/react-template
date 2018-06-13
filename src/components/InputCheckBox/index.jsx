@@ -5,18 +5,29 @@ import styles from './index.style.scss';
 
 class InputCheckBox extends Component {
   constructor(props) {
+
+    console.log('styles', styles);
     super(props);
+
     this.state = {
       selected: false,
     };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState({
+      selected: !this.state.selected,
+    });
   }
 
   render() {
     return (
       <div styleName="container">
         <div styleName="slider" />
-        <div styleName="knob" />
-        <input type="checkbox"  styleName="box"/>
+        <input type="checkbox" styleName="box" value={this.state.selected}/>
+        <div styleName={`knob ${this.state.selected === true ? "knob-right" : "knob-left"}`} onClick={this.handleClick} />
       </div>
     );
   }

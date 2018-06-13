@@ -14,9 +14,9 @@ class App extends Component {
         <h4>Buttons</h4>
         <Button label="check" styleType="wire" />
         <Button label="mate" styleType="wire" />
-        <Button label="mate" styleType="primary" />
-        <Button label="possible" styleType="secondary" />
-        <Button label="dryice" styleType="tertiary" />
+        <Button label="seconday" styleType="secondary" />
+        <Button label="primary" styleType="primary" />
+        <Button label="warning" styleType="tertiary" />
         <br />
         <h4>Input Text</h4>
         <InputText placeholder="Enter this here..." />

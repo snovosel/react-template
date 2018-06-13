@@ -25,7 +25,7 @@
   }
 
   &:hover {
-    background-color: $color-primary-2;
+      background-color: $color-primary-2;
   }
 }
 
@@ -39,16 +39,16 @@
 }
 
 .tertiary {
-  background-color: $color-tertiary;
-  border: 1px solid $color-tertiary;
+  background-color: $color-warning;
+  border: 1px solid $color-warning;
 
   &:focus {
-    border: 1px solid $color-tertiary-2;
-    background-color: $color-tertiary-2;
+    border: 1px solid $color-warning-2;
+    background-color: $color-warning-2;
   }
 
   &:hover {
-    background-color: $color-tertiary-2;
+    background-color: $color-warning-2;
   }
 }
 

@@ -9,28 +9,36 @@
   align-items: flex-start;
   flex-direction: column;
 
-  .box {
-    display: none;
-  }
-
   .slider {
     width: 90%;
     height: 80%;
     border-radius: 25px;
     background-color: $color-secondary;
     position: absolute;
+    left: 2%;
+  }
+
+  .box {
+    display: none;
   }
 
   .knob {
     height: 90%;
     width: 37%;
-    background-color: $color-primary;
-    position: absolute;
     border-radius: 50px;
-    float: left;
+    position: absolute;
 
-    &:hover {
-      background-color: $color-primary-2;
+    &-left {
+      background-color: $color-primary;
+      transition: .3s;
+    }
+
+    &-right {
+      background-color: $color-tertiary;
+      transition: .3s;
+      transform: translateX(150%);
     }
   }
+
+
 }
