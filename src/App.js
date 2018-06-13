@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import CSSModules from 'react-css-modules';
 import Button from './components/Button/index.jsx';
 import InputText from './components/InputText/index.jsx';
 import InputTextArea from './components/InputTextArea/index.jsx';
 import InputCheckBox from './components/InputCheckBox/index.jsx';
 
+import styles from './App.scss';
+
 class App extends Component {
   render() {
     return (
-      <div>
+      <div styleName="app-container">
         <h4>Buttons</h4>
         <Button label="check" styleType="wire" />
         <Button label="mate" styleType="wire" />
@@ -27,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default CSSModules(App, styles);
