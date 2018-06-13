@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import '../../../styles/variables';
 
 /* TODO: check notes */
 
@@ -10,7 +10,7 @@
   padding: 3px 8px;
   border: 1px solid $color-grayscale-3;
   font-family: "Tahoma", "Arial", "Arabic Transparent";
-  border-radius: 1px;
+  border-radius: 3px;
   color: $color-grayscale;
 }
 

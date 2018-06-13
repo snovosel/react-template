@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
-import Button from './components/Button/index.jsx';
-import InputText from './components/InputText/index.jsx';
-import InputTextArea from './components/InputTextArea/index.jsx';
-import InputCheckBox from './components/InputCheckBox/index.jsx';
+import Button from './components/Inputs/Button/index.jsx';
+import InputText from './components/Inputs/InputText/index.jsx';
+import InputTextArea from './components/Inputs/InputTextArea/index.jsx';
+import InputCheckBox from './components/Inputs/InputCheckBox/index.jsx';
+import Card from './components/Blocks/Card/index.jsx';
 
 import styles from './App.scss';
 
@@ -11,6 +12,7 @@ class App extends Component {
   render() {
     return (
       <div styleName="app-container">
+        <h1>Inputs</h1>
         <h4>Buttons</h4>
         <Button label="check" styleType="wire" />
         <Button label="mate" styleType="wire" />
@@ -25,6 +27,12 @@ class App extends Component {
         <InputTextArea placeholder="Enter text in this text area box..." />
         <h4>Check boxes </h4>
         <InputCheckBox />
+        <br />
+        <h1>Layouts</h1>
+        <br />
+        <h4>Card</h4>
+        <Card />
+        <br />
       </div>
     );
   }

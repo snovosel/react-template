@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../../../styles/variables.scss';
 
 .container {
   height: 35px;
@@ -13,9 +13,18 @@
     width: 90%;
     height: 80%;
     border-radius: 25px;
-    background-color: $color-secondary;
+
     position: absolute;
     left: 2%;
+
+    &-off {
+      background-color: $color-grayscale-9;
+    }
+
+    &-on {
+      background-color: $color-tertiary-9;
+      transition: .3s;
+    }
   }
 
   .box {
@@ -29,7 +38,7 @@
     position: absolute;
 
     &-left {
-      background-color: $color-primary;
+      background-color: $color-grayscale-5;
       transition: .3s;
     }
 
