@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.container {
+  height: 35px;
+  width: 85px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .box {
+    display: none;
+  }
+
+  .slider {
+    width: 90%;
+    height: 80%;
+    border-radius: 25px;
+    background-color: $color-secondary;
+    position: absolute;
+  }
+
+  .knob {
+    height: 90%;
+    width: 37%;
+    background-color: $color-primary;
+    position: absolute;
+    border-radius: 50px;
+    float: left;
+
+    &:hover {
+      background-color: $color-primary-2;
+    }
+  }
+}

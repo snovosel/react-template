@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from './components/Button/index.jsx';
 import InputText from './components/InputText/index.jsx';
 import InputTextArea from './components/InputTextArea/index.jsx';
+import InputCheckBox from './components/InputCheckBox/index.jsx';
 
 class App extends Component {
   render() {
@@ -19,6 +20,8 @@ class App extends Component {
         <br />
         <h4>Input Text Area </h4>
         <InputTextArea placeholder="Enter text in this text area box..." />
+        <h4>Check boxes </h4>
+        <InputCheckBox />
       </div>
     );
   }
