@@ -31,7 +31,20 @@ class App extends Component {
         <h1>Layouts</h1>
         <br />
         <h4>Card</h4>
-        <Card />
+        <section styleName="card-showcase">
+          <div>
+            <h6>Card Regular</h6>
+            <Card />
+          </div>
+          <div>
+            <h6>Card Tall</h6>
+            <Card styleType="tall" />
+          </div>
+          <div>
+            <h6>Card Wide</h6>
+            <Card styleType="wide" />
+          </div>
+        </section>
         <br />
       </div>
     );

@@ -6,12 +6,18 @@ import styles from './index.style.scss';
 class Card extends Component {
 
   render() {
+    const { styleType } = this.props;
+
     return (
-      <div styleName="card-container"></div>
+      <div styleName={`container ${styleType}`} ></div>
     );
   }
 
 }
+
+Card.defaultProps = {
+  styleType: '',
+};
 
 const CardStyled = CSSModules(Card, styles, {
   allowMultiple: true,
