@@ -23,19 +23,11 @@
     border: 1px solid $color-primary-2;
     background-color: $color-primary-2;
   }
-
-  &:hover {
-      background-color: $color-primary-2;
-  }
 }
 
 .secondary {
   background-color: $color-secondary;
   border: 1px solid $color-secondary;
-
-  &:focus {
-    border: 1px solid $color-primary-5;
-  }
 }
 
 .tertiary {
@@ -44,10 +36,6 @@
 
   &:focus {
     border: 1px solid $color-warning-2;
-    background-color: $color-warning-2;
-  }
-
-  &:hover {
     background-color: $color-warning-2;
   }
 }
