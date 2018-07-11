@@ -6,7 +6,6 @@ import styles from './index.style.scss';
 class InputCheckBox extends Component {
   constructor(props) {
 
-    console.log('styles', styles);
     super(props);
 
     this.state = {
@@ -25,7 +24,7 @@ class InputCheckBox extends Component {
   render() {
     return (
       <div styleName="container">
-        <div styleName="slider" />
+        <div styleName={`slider ${this.state.selected === true ? "slider-on" : "slider-off"}`} />
         <input type="checkbox" styleName="box" value={this.state.selected}/>
         <div styleName={`knob ${this.state.selected === true ? "knob-right" : "knob-left"}`} onClick={this.handleClick} />
       </div>
