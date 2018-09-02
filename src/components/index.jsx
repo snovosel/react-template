@@ -5,7 +5,6 @@ import Button from './Inputs/Button/index.jsx';
 import InputText from './Inputs/InputText/index.jsx';
 import InputTextArea from './Inputs/InputTextArea/index.jsx';
 import InputCheckBox from './Inputs/InputCheckBox/index.jsx';
-import Card from './Blocks/Card/index.jsx';
 
 import styles from './style.scss';
 

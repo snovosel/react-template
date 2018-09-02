@@ -12,6 +12,8 @@ const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
 
+const ALIASES = require('./helpers/aliases.js');
+
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
 const publicPath = '/';
@@ -76,14 +78,7 @@ module.exports = {
       // It is guaranteed to exist because we tweak it in `env.js`
       process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
     ),
-    // TODO: add separate javascript module for aliases of this template for extensability
-    alias: {
-      components: 'components/',
-      Blocks: 'components/Blocks',
-      Inputs: 'components/Inputs',
-      Landing: 'components/Landing',
-      Layout: 'components/Layout'
-    },
+    alias: ALIASES,
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common component filename extension to support
     // some tools, although we do not recommend using it, see:
