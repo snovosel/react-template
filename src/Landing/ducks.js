@@ -1,4 +1,5 @@
 // use immuatbility-helper as much as possible here
+import { update } from 'immutability-helper';
 
 const initialState = {
   title: 'LandingTitle',
@@ -11,6 +12,11 @@ export function reducer(state = initialState, action) {
     case 'SHOW_COUNT':
       return state.count;
 
+    case 'ADD_COUNT':
+      return update(state, {
+        count: { $set: state.count + 1 }
+      });
+
     default:
       return state;
   }
@@ -18,4 +24,8 @@ export function reducer(state = initialState, action) {
 
 export const showCount = () => ({
   action: 'SHOW_COUNT'
+});
+
+export const addCount = () => ({
+  action: 'ADD_COUNT'
 });
