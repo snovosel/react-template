@@ -16,11 +16,6 @@ export function reducer(state = initialState, action) {
   }
 }
 
-// export const showCount = () => {
-//   action: SHOW_COUNT;
-//   payload: {};
-// };
-
 export const showCount = () => ({
   action: 'SHOW_COUNT'
 });
