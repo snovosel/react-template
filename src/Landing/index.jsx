@@ -3,21 +3,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 
-// const mapStateToProps = state = ({
-//   count: state.get('count'),
-// });
-
-// const mapStateToProps = (state) => {
-//   console.log('state count', state);
-//   return {
-//     count: state.count,
-//   }
-// }
-
-// const mapStateToProps = ({state}) => ({
-//   state.count
-// });
-
 const mapStateToProps = ({
   landing: {
     count
@@ -42,8 +27,4 @@ export class Landing extends Component {
   }
 }
 
-// const LandingRedux = connect(mapStateToProps, null)(Landing);
-
 export default connect(mapStateToProps, null)(Landing);
-
-// export default connect(mapStateToProps, null)(Landing);
