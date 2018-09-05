@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import { Switch, Route } from 'react-router-dom';
 
-import { Landing } from 'Landing/index.jsx';
+import Landing from 'Landing/index.jsx';
 import ComponentLibrary from './components';
 
 import styles from './App.scss';
