@@ -1,5 +1,9 @@
 // use immuatbility-helper as much as possible here
-import { update } from 'immutability-helper';
+// import { update } from 'immutability-helper';
+
+const duckRoot = "Landing/";
+export const ADD_COUNT = `${duckRoot}/ADD_COUNT`;
+export const SHOW_COUNT = `${duckRoot}/SHOW_COUNT`;
 
 const initialState = {
   title: 'LandingTitle',
@@ -7,15 +11,17 @@ const initialState = {
 };
 
 export function reducer(state = initialState, action) {
-
-  switch(action) {
+  switch(action.type) {
     case 'SHOW_COUNT':
       return state.count;
 
-    case 'ADD_COUNT':
-      return update(state, {
-        count: { $set: state.count + 1 }
-      });
+    case ADD_COUNT: {
+      return {
+        ...state,
+        count: state.count + 1,
+      }
+    }
+
 
     default:
       return state;
@@ -23,9 +29,9 @@ export function reducer(state = initialState, action) {
 }
 
 export const showCount = () => ({
-  action: 'SHOW_COUNT'
+  type: SHOW_COUNT
 });
 
 export const addCount = () => ({
-  action: 'ADD_COUNT'
+  type: ADD_COUNT
 });
