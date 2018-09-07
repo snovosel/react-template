@@ -13,9 +13,6 @@ class App extends Component {
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route path="/components" component={ComponentLibrary} />
-        <Route path="/about" render={() => (
-          <p>About</p>
-        )} />
       </Switch>
     );
   }

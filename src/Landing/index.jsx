@@ -35,11 +35,9 @@ export class Landing extends Component {
   render() {
     return (
       <div>
-        <p>Landing</p>
         <Link to="/components">Components</Link>
         <br />
-        <Link to="/about" >About</Link>
-        <br />
+        <h3>Redux</h3>
         <p>{this.props.count}</p>
         <button onClick={this.handleClick}>Add Count</button>
       </div>
