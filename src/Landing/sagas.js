@@ -2,9 +2,9 @@
 
 import { takeEvery } from 'redux-saga/effects';
 
-// import { apiCall, API_CALL } from "../api.js";
+// import { GetRequest } from "../api.js";
 
-// import { apiCall } from './ducks.js';
+import { SHOW_COUNT } from './ducks.js';
 
 // export function* makeApiCallAsync() {
 //    try {
@@ -29,7 +29,7 @@ export function* makeApiCallAsync() {
 export const watchers = [
   function* watchApiCall() {
     // yield takeEvery(API_CALL, makeApiCallAsync);
-    yield takeEvery("api-call", makeApiCallAsync);
+    yield takeEvery(SHOW_COUNT, makeApiCallAsync);
   },
 ]
 
