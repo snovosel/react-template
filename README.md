@@ -4,12 +4,12 @@ This is a base template for react projects to begin work on features rather than
 
 This template comes natively with the following packages:
 
-Redux
-Redux-saga
-React-router
-axios
-react-css-modules with scss support
-immutability helper
+- Redux
+- Redux-saga
+- React-router
+- axios
+- react-css-modules with scss support
+- immutability helper
 
 
 # Getting started
