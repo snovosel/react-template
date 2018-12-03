@@ -24,7 +24,6 @@ npm install && yarn
 To compile in a dev environment:
 ```
 yarn start
-
 ```
 
 To build for a production environment:
