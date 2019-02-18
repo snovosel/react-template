@@ -31,5 +31,3 @@ To build for a production environment:
 ```
 npm run build 
 ```
-
-Happy coding! :)
